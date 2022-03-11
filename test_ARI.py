@@ -5,3 +5,9 @@ def test_ari_emptychar():
 def test_ari_alphanumeric():
      ret=ARI.ari_alphanumeric('!@##$%^')
      assert ret ==False
+def test_ari_emptywords():
+     ret=ARI.ari_emptyword('asdf')
+     assert ret==None
+def test_ari_words():
+     ret=ARI.ari_words('i am a sick dog')
+     assert ret==5
