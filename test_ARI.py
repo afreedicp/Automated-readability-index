@@ -10,4 +10,10 @@ def test_ari_emptywords():
      assert ret==None
 def test_ari_numword():
      ret=ARI.ari_numword('i am a sick dog')
-     assert ret==5
+     assert ret==4
+def test_ari_emptysentence():
+     ret=ARI.ari_emptysentence('asdasfdasfasuhcbweucb asfdawfawfawf asfafaewf')
+     assert ret==None
+def test_ari_sentence():
+     ret=ARI.ari_sentences('i am an idiot. what you think of me? dont feel bad. we are one!')
+     assert ret==4
