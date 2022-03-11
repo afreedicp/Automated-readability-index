@@ -8,6 +8,6 @@ def test_ari_alphanumeric():
 def test_ari_emptywords():
      ret=ARI.ari_emptyword('asdf')
      assert ret==None
-def test_ari_words():
-     ret=ARI.ari_words('i am a sick dog')
+def test_ari_numword():
+     ret=ARI.ari_numword('i am a sick dog')
      assert ret==5
